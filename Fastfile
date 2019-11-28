@@ -232,7 +232,10 @@ platform :ios do
       team_id: ENV["TEAM_ID"],
       version: app_version
     )
-    
+    # need to ensure that download dSYM file finished with no errors
+    if (Actions.lane_context[SharedValues::DSYM_PATHS] || []).count == 0
+      UI.user_error!("dSYM file isn't ready yet. Error")
+    end    
     # upload dSym to Firebase Crashlytics
     upload_symbols_to_crashlytics(
       gsp_path: ENV["GSP_PATH"]
