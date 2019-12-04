@@ -2,6 +2,8 @@
 
 [![Developed by Mad Devs](https://maddevs.io/badge-light.svg)](https://maddevs.io)
 
+[Our detailed BLOG](https://blog.maddevs.io/automatic-delivery-of-ios-applications-with-fastlane-and-gitlabci-9805042bc0c)
+
 ## Technologies
 
 *  [gitlab](https://gitlab.com/) - GitLab is a web-based DevOps lifecycle tool that provides a Git-repository manager providing wiki, issue-tracking and CI/CD pipeline[7] features, using an open-source license, developed by GitLab Inc
